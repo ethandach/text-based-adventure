@@ -1,0 +1,114 @@
+{deck}
+version:1
+card:7
+size:[512,342]
+
+{card:home}
+{widgets}
+Previous:{"type":"button","size":[103,26],"pos":[20,297],"script":"home.0","text":"Back","style":"rect"}
+first option text:{"type":"field","size":[309,51],"pos":[106,33],"align":"center","value":"Which element would you like to wield?"}
+metal option 1:{"type":"button","size":[146,129],"pos":[107,98],"script":"home.1","text":"Metal","style":"rect"}
+water option 1:{"type":"button","size":[146,129],"pos":[266,98],"script":"home.2","text":"Water","style":"rect"}
+
+{script:home.0}
+on click do
+  go["Prev"]
+end
+{end}
+
+{script:home.1}
+on click do
+  go["card2"]
+end
+{end}
+
+{script:home.2}
+on click do
+  go["card3"]
+end
+{end}
+
+{card:card2}
+{widgets}
+third card question:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"A wild dragon appears! You must choose an action to defeat it."}
+Previous:{"type":"button","size":[103,26],"pos":[20,297],"script":"home.0","text":"Back","style":"rect"}
+attack with metal:{"type":"button","size":[146,129],"pos":[107,98],"script":"card2.0","text":"Attack","style":"rect"}
+defend with metal:{"type":"button","size":[146,129],"pos":[266,98],"script":"card2.1","text":"Defend","style":"rect"}
+
+{script:card2.0}
+on click do
+  go["card4"]
+end
+{end}
+
+{script:card2.1}
+on click do
+  go["card5"]
+end
+{end}
+
+{card:card4}
+{widgets}
+lose attacking with metal:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"You create a metal sword using magic to attack the dragon with. Your attack was too slow and the dragon avoided it. You lose."}
+back to start:{"type":"button","size":[150,130],"pos":[185,106],"script":"card4.0","text":"Try Again!","style":"rect"}
+
+{script:card4.0}
+on click do
+  go["card1"]
+end
+{end}
+
+{card:card5}
+{widgets}
+win defending with metal:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"You create a metal shield using magic to defend against the dragon's flame breath attack. The shield's magical reflective properties reflect the flame breath at the dragon. You won!"}
+back to start:{"type":"button","size":[150,130],"pos":[185,106],"script":"card4.0","text":"Play Again...","style":"rect"}
+
+{card:card3}
+{widgets}
+third card question:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"A wild dragon appears! You must choose an action to defeat it."}
+Previous:{"type":"button","size":[103,26],"pos":[20,297],"script":"card3.0","text":"Back","style":"rect"}
+Attack1:{"type":"button","size":[146,129],"pos":[107,98],"script":"card3.1","text":"Attack","style":"rect"}
+Defend:{"type":"button","size":[146,129],"pos":[266,98],"script":"card3.2","text":"Defend","style":"rect"}
+
+{script:card3.0}
+on click do
+  go["home"]
+end
+{end}
+
+{script:card3.1}
+on click do
+  go["Next"]
+end
+{end}
+
+{script:card3.2}
+on click do
+  go["card7"]
+end
+{end}
+
+{card:card6}
+{widgets}
+win attacking with water:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"The dragon attacks you with its flame breath. You use water magic to dispel the attack and slay the dragon! You won!"}
+back to start:{"type":"button","size":[150,130],"pos":[185,106],"script":"card4.0","text":"Play again...","style":"rect"}
+
+{card:card7}
+{widgets}
+lose defending with water:{"type":"field","size":[304,45],"pos":[106,45],"align":"center","value":"The dragon begins to rush you. To defend yourself you envelope yourself in a water barrier expecting the dragon to breath fire. The dragon uses his claws to attack instead, breaking through the water barrier easily. You lose."}
+back to start:{"type":"button","size":[150,130],"pos":[185,106],"script":"card4.0","text":"Try Again!","style":"rect"}
+
+{card:card1}
+image:"%%IMG2AgABVgD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8Arg=="
+script:"card1.0"
+{widgets}
+intro question:{"type":"field","size":[342,65],"pos":[90,46],"align":"center","value":"Which character would you like to play as?"}
+Man Button 1:{"type":"button","size":[146,129],"pos":[107,122],"script":"card3.1","text":"Man","style":"rect"}
+Woman Button 1:{"type":"button","size":[146,129],"pos":[266,122],"script":"card3.1","text":"Woman","style":"rect"}
+
+{script:card1.0}
+on view do
+ 
+end
+{end}
+
